@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+	<title>小浪漫</title>
+	<meta name="keywords" content="我爱你">
+	<meta name="description" content="我爱你">
+	<link href="/static/Style/IndexStyle.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<h1><a href="/">Love Anniversary</a></h1>
+			<h2>小确幸！</h2>
+		</div>
+<!--		<div id="menu">
+			<ul>
+				<li ><a href="Home.html" title="爱的首页">Love首页</a></li>
+				<li><a href="Diary.html" title="我们之间的甜言蜜语">Love蜜语</a></li>
+				<li ><a href="Album.html"  title="爱的相册">Love相册</a></li>
+				<li><a href="Travel.html"  title="爱的旅行">Love旅游</a></li>
+				<li class="tu"><a href="Love.html"  title="爱的表白">Love表白</a></li>
+				<li><a href="Time.html"  title="我们的纪念时" target="_blank">Love时间</a></li>
+			</ul>
+		</div>   -->
+
+	
+	<!-- 彩色滚动变换字体 -->
+        <div id="binft" class="text" style="text-align:center;color:#FF0000;font-size:xx-large"></div>
+        <script>
+          var binft = function (r) {
+            function t() {
+              return b[Math.floor(Math.random() * b.length)]
+            }  
+            function e() {
+              return String.fromCharCode(94 * Math.random() + 33)
+            }
+            function n(r) {
+              for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+                var l = document.createElement("span");
+                l.textContent = e(), l.style.color = t(), n.appendChild(l)
+              }
+              return n
+            }
+            function i() {
+              var t = o[c.skillI];
+              c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+            }
+            var l = "",
+            o = ["我欲与君相知，","长命无绝衰。","山无陵，江水为竭，","冬雷震震，夏雨雪，","　天地合，乃敢与君绝！"].map(function (r) {          
+            return r + ""
+            }),
+            a = 2,
+            g = 1,
+            s = 5,
+            d = 75,
+            b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+            c = {
+              text: "",
+              prefixP: -s,
+              skillI: 0,
+              skillP: 0,
+              direction: "forward",
+              delay: a,
+              step: g
+            };
+            i()
+            };
+            binft(document.getElementById('binft'));
+        </script>
+		</div>
+	</div>
+	<hr />
+	<div id="page">
+		<p>       撒花       芜湖~</p>
+		<h2 class="title_tj" style="background:none;">
+			<span >&nbsp;&nbsp;&nbsp;&nbsp;给宝贝来个小浪漫</span><br/>
+		</h2>
+		<p style="font-size:16px"></p>
+		<br/>
+		对你的爱就是一个for(;;)循环，没有return，也没有break，只有continue，对你的爱永无止境！<br/>
+		<pre style="font-size:20px">
+9999999900099990009999990009999999909900000099099999999099999900
+9900000000990099009900099009900000009900000099099000000099000990
+9900000009900009909900009909900000009900000099099000000099000099
+9999999909900009909999990009999999909900000099099999999099999900
+9900000009900009909900990009900000000990000990099000000099009900
+9900000000990099009900099009900000000099009900099000000099000990
+9900000000099990009900009909999999900000990000099999999099000099
+6060606060606060606060606060606060606060606060606060606060606060
+6996699999966699999966996666996669999666996666990606060606060660
+6996999999996999999996996666996699669966996666990606060606060660
+6996699999999999999966996666996996666996996666990606060606060660
+6996666999999999999666669999666996666996996666990606060606060660
+6996666669999999966666666996666996666996996666990606060606060660
+6996666666699996666666666996666699669966996666990606060606060660
+6996666666669966666666666996666669999666699999960606060606060660
+
+使用方法：
+
+按Ctrl+F
+然后输入9
+		</pre>
+	</div>
+	<!-- end page -->
+	  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/static/js/love.js"></script>
+  <!-- 鼠标点击烟花爆炸效果 -->
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="/static/js/anime.min.js"></script> 
+  <script type="text/javascript" src="/static/js/fireworks.js"></script>
+  <!--浏览器搞笑标题-->
+  <script type="text/javascript" src="/static/js/FunnyTitle.js"></script>
+  <!-- 速度优化脚本 -->
+  <script src="/static/js/instantclick-1.2.2.js" type="module"></script>
+  <!-- 樱花飘落 -->
+  <script src="/static/js/sakura.js"></script>
+  <!-- lolijump -->
+  <div id="lolijump"><a href="/"><img src="/static/images/loli.gif"></a></div>
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>日常语录</title>
+    <meta name="keywords" content="我爱你">
+    <meta name="description" content="我爱你">
+    <link rel="stylesheet" href="/static/Style/Index.css">
+    <link rel="stylesheet" href="/static/Style/Style.css">
+    <link rel="stylesheet" href="/static/Style/Animate.css">
+    <link href="/static/Style/IndexStyle.css" rel="stylesheet" type="text/css" media="screen">
+    <script type="text/javascript" src="/static/Script/jquery-1.42.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <h1><a href="/">Love Anniversary</a></h1>
+            <h2>日常语录记载！</h2>
+        </div>
+ <!--       <div id="menu">
+            <ul>
+                <li ><a href="Home.html" title="爱的首页">Love首页</a></li>
+                <li class="tu"><a href="Diary.html" title="我们之间的甜言蜜语">Love蜜语</a></li>
+                <li ><a href="Album.html"  title="爱的相册">Love相册</a></li>
+                <li><a href="Travel.html"  title="爱的旅行">Love旅游</a></li>
+                <li ><a href="Love.html"  title="爱的表白">Love表白</a></li>
+                <li><a href="Time.html"  title="我们的纪念时" target="_blank">Love时间</a></li>
+            </ul>
+        </div>  -->
+		
+		 <!-- 彩色滚动变换字体 -->
+        <div id="binft" class="text" style="text-align:center;color:#FF0000;font-size:xx-large"></div>
+        <script>
+          var binft = function (r) {
+            function t() {
+              return b[Math.floor(Math.random() * b.length)]
+            }  
+            function e() {
+              return String.fromCharCode(94 * Math.random() + 33)
+            }
+            function n(r) {
+              for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+                var l = document.createElement("span");
+                l.textContent = e(), l.style.color = t(), n.appendChild(l)
+              }
+              return n
+            }
+            function i() {
+              var t = o[c.skillI];
+              c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+            }
+            var l = "",
+            o = ["我住长江头，君住长江尾。","日日思君不见君，共饮长江水。","此水几时休？此恨几时已？","只愿君心似我心，定不负相思意！","撒花，撒花，撒花~~"].map(function (r) {          
+            return r + ""
+            }),
+            a = 2,
+            g = 1,
+            s = 5,
+            d = 75,
+            b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+            c = {
+              text: "",
+              prefixP: -s,
+              skillI: 0,
+              skillP: 0,
+              direction: "forward",
+              delay: a,
+              step: g
+            };
+            i()
+            };
+            binft(document.getElementById('binft'));
+        </script>
+		</div>
+    </div>
+    <hr />
+    <div id="main">
+         <div id="s_about">
+             <div class="tongy">
+                 <div class="tg_1">
+                     <span class="shouye">
+                         <a href="/" title="首页">首页</a>
+                     </span>>><h1>经典语录</h1><span>Say</span>
+                 </div>
+                 <p>记录那些点点滴滴的随口一言</p>
+                 <div class="clear"></div>
+             </div>
+             <div id="a_say" ></div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/ZSS.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>我们要一起度过人生中的每一天，去体会这个世界上所有美妙幸福的事。<br/>做一对让别人羡慕、每天都觉得无比甜蜜的情侣。
+                         <span>2021-07-07</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>捻一个笋丝，塑一个梅菜，一起打破，用水调和。梅菜中有笋丝，笋丝中有梅菜，永不分离。
+                         <span>2021-07-26</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>一花一世界，一叶一追寻。<br/>一曲一场叹，一生为一人。
+                         <span>2021-08-22</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>感凡缠绵意，系在泮池旁。
+                         <span>2021-08-29</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>春水初生，春林初盛，春风十里，不如笋丝。
+                         <span>2021-09-07</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/ZSS.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>吵架不是重点，磨合才是王道
+                         <span>2021-10-12</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>我心融于红日间，爱客泛舟赏晚霞。<br/>宝殿卿临亦自羞，贝景致教皆美然。
+                         <span>2021-10-26</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/ZSS.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>不要惹我生气！！！情绪不可以反复！！！
+                         <span>2021-11-15</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>愿为西南风，长逝入卿怀
+                         <span>2021-11-18</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>你问我爱你值不值得，其实你应该知道，爱就是不问值不值得。
+                         <span>2021-11-18</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>彼此当年少，莫负好时光
+                         <span>2021-12-13</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>你带笑地向我走来，月色和雪色之间，你是第三种绝色。
+                         <span>2021-12-13</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>愿得一人心，白首不相离
+                         <span>2021-12-15</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>静下来想你，觉得一切都美好得不可思议。
+                         <span>2021-12-17</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>祝你今天愉快，你明天的愉快留着我明天再祝。
+                         <span>2021-12-29</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/ZSS.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>遇上你，爱上你，和你在一起，此生无憾
+                         <span>2022-01-06</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>如果我的世界不能成为你的世界，<br/>那我便把你的世界变为我的世界。
+                         <span>2022-01-24</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/ZSS.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>你还是你，有我一喊就心颤的名字。
+                         <span>2022-02-23</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>弱水三千，只取一瓢
+                         <span>2022-03-13</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/ZSS.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>你的过去我无法参与，你的将来我奉陪到底。
+                         <span>2022-04-22</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/ZSS.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>目中无人随处拥吻，我们依偎到老，是我能想象的，最好的，爱情的模样！
+                         <span>2022-04-25</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>我欲与君相知，长命无绝衰。
+                         <span>2022-05-10</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>衣带渐宽终不悔，为伊消得人憔悴
+                         <span>2022-05-16</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>一种相思，两处闲愁。
+                         <span>2022-05-20</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>此去经年，应是良辰好景虚设。便纵有，千种风情，更与何人说。
+                         <span>2022-06-06</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>有美人兮，见之不忘，一日不见兮，思之如狂。
+                         <span>2022-06-09</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>忆卿心似西江水，日夜东流无歇时
+                         <span>2022-06-13</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/ZSS.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>目光所至，皆是你
+                         <span>2022-06-16</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/ZSS.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>执手相看泪眼，竟无语凝噎。
+                         <span>2022-07-03</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/ZSS.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>硬技方为王道，其余皆下品
+                         <span>2022-07-28</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+             <div class="say_out animated bounceIn">
+                 <div class="left my_pic">
+                     <img src="/static/images/CMC.jpg" style="width: 100px;height: 100px">
+                 </div>
+                 <div class="right my_text">
+                     <p>What chiken eight？
+                         <span>2022-08-26</span>
+                     </p>
+                 </div>
+                 <div class="clear"></div>
+             </div>
+         </div>
+         <div class="clear"></div>
+    </div>
+<!-- end page -->
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/static/js/love.js"></script>
+  <!-- 鼠标点击烟花爆炸效果 -->
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="/static/js/anime.min.js"></script> 
+  <script type="text/javascript" src="/static/js/fireworks.js"></script>
+  <!--浏览器搞笑标题-->
+  <script type="text/javascript" src="/static/js/FunnyTitle.js"></script>
+  <!-- 速度优化脚本 -->
+  <script src="/static/js/instantclick-1.2.2.js" type="module"></script>
+  <!-- 樱花飘落 -->
+  <script src="/static/js/sakura.js"></script>
+  <!-- lolijump -->
+  <div id="lolijump"><a href="/"><img src="/static/images/loli.gif"></a></div>
+</body>
+</html>
